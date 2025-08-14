@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="cart.css">
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+    <header class="container-fluid desktop-header">
+        <div class="container d-flex align-items-center justify-content-between p-4">
+            <div class="logo">
+                <h2><i class="fas fa-store"></i>Brand</h2>
+            </div>
+            <div class="icons">
+                <div class="icon-item">
+                    <i class="fa-solid fa-user"></i>
+                    <a href="#">Profile</a>
+                </div>
+                <div class="icon-item">
+                    <i class="fa-solid fa-message"></i>
+                    <a href="#">Message</a>
+                </div>
+                <div class="icon-item">
+                    <i class="fa-solid fa-heart"></i>
+                    <a href="cart.html">Orders</a>
+                </div>
+                <div class="icon-item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a href="cart.html">My Cart</a>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+        <i class="fa fa-arrow-left" onclick="history.back()"></i>
+        <h4 class="ms-5">Shopping cart </h4>
+        
+    </header>
+
+
+
+
+    <section class="container-fluid content">
+        <div class="container py-5">
+            <h4 class="fw-bold mb-4 cartH">My cart (3)</h4>
+            <div class="row">
+                <!-- Cart items -->
+                <div class="col-md-8">
+                    <div class="cart-container">
+
+                        <!-- Product 1 -->
+                        <div class="d-flex justify-content-between align-items-start cart-item">
+                            <div class="d-flex gap-3">
+                                <img src="assests/R-1.png" alt="Product">
+                                <div>
+                                    <div class="item-title">T-shirts with multiple colors, for men and lady</div>
+                                    <div class="item-meta">Size: medium, Color: blue, &nbsp; Material: Plastic</div>
+                                    <div class="item-meta">Seller: Artel Market</div>
+
+                                    <div class="buttons-row mt-2">
+                                        <button class="btn btn-outline-danger btn-sm btn-remove">Remove</button>
+                                        <button class="btn btn-outline-primary btn-sm btn-save">Save for later</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-end">
+                                <div class="fw-semibold mb-2">$78.99</div>
+                                <select class="form-select form-select-sm" style="width: 90px;">
+                                    <option>Qty: 9</option>
+                                    <option>Qty: 8</option>
+                                    <option>Qty: 7</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div class="d-flex justify-content-between align-items-start cart-item">
+                            <div class="d-flex gap-3">
+                                <img src="assests/R-5.png" alt="Bag">
+                                <div>
+                                    <div class="item-title">T-shirts with multiple colors, for men and lady</div>
+                                    <div class="item-meta">Size: medium, Color: blue, &nbsp; Material: Plastic</div>
+                                    <div class="item-meta">Seller: Best factory LLC</div>
+
+                                    <div class="buttons-row mt-2">
+                                        <button class="btn btn-outline-danger btn-sm btn-remove">Remove</button>
+                                        <button class="btn btn-outline-primary btn-sm btn-save">Save for later</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-end">
+                                <div class="fw-semibold mb-2">$39.00</div>
+                                <select class="form-select form-select-sm" style="width: 90px;">
+                                    <option>Qty: 3</option>
+                                    <option>Qty: 2</option>
+                                    <option>Qty: 1</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Product 3 -->
+                        <div class="d-flex justify-content-between align-items-start cart-item">
+                            <div class="d-flex gap-3">
+                                <img src="assests/H-3.png" alt="Lamp">
+                                <div>
+                                    <div class="item-title">T-shirts with multiple colors, for men and lady</div>
+                                    <div class="item-meta">Size: medium, Color: blue, &nbsp; Material: Plastic</div>
+                                    <div class="item-meta">Seller: Artel Market</div>
+
+                                    <div class="buttons-row mt-2">
+                                        <button class="btn btn-outline-danger btn-sm btn-remove">Remove</button>
+                                        <button class="btn btn-outline-primary btn-sm btn-save">Save for later</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-end">
+                                <div class="fw-semibold mb-2">$170.50</div>
+                                <select class="form-select form-select-sm" style="width: 90px;">
+                                    <option>Qty: 1</option>
+                                    <option>Qty: 2</option>
+                                    <option>Qty: 3</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Bottom buttons -->
+                        <div class="d-flex justify-content-between pt-3">
+                            <button class="btn btn-back"><i class="bi bi-arrow-left"></i> Back to shop</button>
+                            <a href="#" class="btn btn-link text-decoration-none">Remove all</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-md-4">
+
+                    <!-- Coupon box -->
+                    <div class="coupon-card">
+                        <h6 class="mb-3">Have a coupon?</h6>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Add coupon">
+                            <button class="btn btn-outline-primary">Apply</button>
+                        </div>
+                    </div>
+
+                    <!-- Summary card -->
+                    <div class="summary-card">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Subtotal:</span>
+                            <span class="value">$1403.97</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Discount:</span>
+                            <span class="value red">– $60.00</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                            <span>Tax:</span>
+                            <span class="value green">+ $14.00</span>
+                        </div>
+                        <div class="d-flex justify-content-between border-top pt-3 mb-4">
+                            <strong>Total:</strong>
+                            <strong>$1357.97</strong>
+                        </div>
+                        <button class="btn btn-checkout mb-3">Checkout</button>
+
+                        <div class="pay-icons">
+                            <img src="https://img.icons8.com/color/48/mastercard-logo.png" alt="Mastercard">
+                            <img src="https://img.icons8.com/ios-filled/50/paypal.png" alt="PayPal">
+                            <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa">
+                            <img src="https://img.icons8.com/ios-filled/50/mac-os.png" alt="Apple Pay">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container ">
+            <div class="row text-start g-4 justify-content-between">
+
+                <!-- Secure Payment -->
+                <div class="col-md-auto">
+                    <div class="feature-box">
+                        <div class="icon-circle">
+                            <i class="bi bi-lock"></i>
+                        </div>
+                        <div>
+                            <p class="feature-title">Secure payment</p>
+                            <p class="feature-sub">Have you ever finally just</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Customer Support -->
+                <div class="col-md-auto">
+                    <div class="feature-box">
+                        <div class="icon-circle">
+                            <i class="bi bi-chat-left-text"></i>
+                        </div>
+                        <div>
+                            <p class="feature-title">Customer support</p>
+                            <p class="feature-sub">Have you ever finally just</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Free Delivery -->
+                <div class="col-md-auto">
+                    <div class="feature-box">
+                        <div class="icon-circle">
+                            <i class="bi bi-truck"></i>
+                        </div>
+                        <div>
+                            <p class="feature-title">Free delivery</p>
+                            <p class="feature-sub">Have you ever finally just</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Saved for later section -->
+        <div class="container">
+            <div class="saved-wrapper">
+                <h6 class="fw-semibold mb-4">Saved for later</h6>
+
+                <div class="d-flex flex-wrap gap-4 justify-content-start">
+
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <img src="assests/C-3.png" alt="Tablet">
+                        <div class="product-price">$99.50</div>
+                        <div class="product-desc">GoPro HERO6 4K Action <br> Camera - Black</div>
+                        <button class="btn btn-outline-primary btn-sm btn-move">
+                            <i class="bi bi-cart"></i> Move to cart
+                        </button>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <img src="assests/C-4.png" alt="Phone">
+                        <div class="product-price">$99.50</div>
+                        <div class="product-desc">GoPro HERO6 4K Action <br> Camera - Black</div>
+                        <button class="btn btn-outline-primary btn-sm btn-move text-center">
+                            <i class="bi bi-cart"></i> Move to cart
+                        </button>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <img src="assests/img_1.png" alt="Watch">
+                        <div class="product-price">$99.50</div>
+                        <div class="product-desc">GoPro HERO6 4K Action <br> Camera - Black</div>
+                        <button class="btn btn-outline-primary btn-sm btn-move">
+                            <i class="bi bi-cart"></i> Move to cart
+                        </button>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <img src="assests/img_2.png" alt="Laptop">
+                        <div class="product-price">$99.50</div>
+                        <div class="product-desc">GoPro HERO6 4K Action <br> Camera - Black</div>
+                        <button class="btn btn-outline-primary btn-sm btn-move">
+                            <i class="bi bi-cart"></i> Move to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Discount banner -->
+        <div class="container discount-banner mb-4">
+            <div>
+                <h5>Super discount on more than 100 USD</h5>
+                <small>Have you ever finally just write dummy info</small>
+            </div>
+            <button class="btn-shop">Shop now</button>
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+
+    <footer>
+        <!-- Top Section -->
+        <div class="container">
+            <div class="row footer-top align-items-start g-4 pb-5">
+                <!-- 1. Brand block -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="footer-logo d-flex align-items-center">
+                        <i class="fas fa-store"></i>
+                        Brand
+                    </div>
+                    <p class="footer-desc">Best information about the company goes here but now lorem ipsum is</p>
+                    <div class="footer-social d-flex">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- 2. About -->
+                <div class="col-6 col-md">
+                    <div class="footer-title">About</div>
+                    <a class="footer-link" href="index.html">About Us</a>
+                    <a class="footer-link" href="index.html">Find store</a>
+                    <a class="footer-link" href="listview.html">Categories</a>
+                    <a class="footer-link" href="#">Blogs</a>
+                </div>
+
+                <!-- 3. Partnership -->
+                <div class="col-6 col-md">
+                    <div class="footer-title">Partnership</div>
+                    <a class="footer-link" href="index.html">About Us</a>
+                    <a class="footer-link" href="index.html">Find store</a>
+                    <a class="footer-link" href="listview.html">Categories</a>
+                    <a class="footer-link" href="#">Blogs</a>
+                </div>
+
+                <!-- 4. Information -->
+                <div class="col-6 col-md">
+                    <div class="footer-title">Information</div>
+                    <a class="footer-link" href="#">Help Center</a>
+                    <a class="footer-link" href="#">Money Refund</a>
+                    <a class="footer-link" href="#">Shipping</a>
+                    <a class="footer-link" href="#">Contact us</a>
+                </div>
+
+                <!-- 5. For users -->
+                <div class="col-6 col-md">
+                    <div class="footer-title">For users</div>
+                    <a class="footer-link" href="#">Login</a>
+                    <a class="footer-link" href="#">Register</a>
+                    <a class="footer-link" href="#">Settings</a>
+                    <a class="footer-link" href="cart.html">My Orders</a>
+                </div>
+
+                <!-- 6. Get app -->
+                <div class="col-6 col-md">
+                    <div class="footer-title">Get app</div>
+                    <div class="footer-app d-flex flex-column">
+                        <!-- App Store Badge (Apple official CDN) -->
+                        <a href="#">
+                            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                                alt="Download on the App Store" style="height: 36px; margin-bottom: 8px;">
+                        </a>
+
+                        <!-- Google Play Badge (Google official CDN) -->
+                        <a href="#">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                                alt="Get it on Google Play" style="height: 32px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="footer-bottom">
+            <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="text-muted">© 2023 Ecommerce.</div>
+                <div class="footer-lang d-flex align-items-center mt-2 mt-md-0">
+                    <img src="https://flagcdn.com/us.svg" alt="English Flag">
+                    <span class="text-muted">English <i class="fas fa-chevron-up ms-1"></i></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+    crossorigin="anonymous"></script>
+
+<script src="main.js"></script>
+<script src="cart.js"></script>
+
+
+
+
+
+</html>

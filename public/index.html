@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Brand</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap"
+        rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        referrerpolicy="no-referrer" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    </link>
+</head>
+
+<body>
+
+    <!-- ===== Mobile Header ===== -->
+    <header class="mobile-header">
+        <div class="mobile-menu-icon" id="menuToggle"><i class="fas fa-bars"></i></div>
+        <div class="logo"><i class="fas fa-store"></i>Brand</div>
+        <div class="icons">
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            <i class="fas fa-user"></i>
+        </div>
+    </header>
+
+
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-profile">
+            <div class="drawer-auth">
+                <a href="#">Sign in</a> | <a href="#">Register</a>
+            </div>
+            <span class="close-drawer" id="closeDrawer">&times;</span>
+        </div>
+
+        <ul class="drawer-menu">
+            <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
+            <li><i class="fa fa-list"></i><a href="listview.html">Categories</a></li>
+            <li><i class="fa fa-heart"></i><a href="cart.html">Favorites</a></li>
+            <li><i class="fa fa-box"></i><a href="cart.html">My orders</a></li>
+        </ul>
+
+        <hr>
+
+        <ul class="drawer-menu">
+            <li><i class="fa fa-globe"></i><a href="#">English | USD</a></li>
+            <li><i class="fa fa-headphones"></i><a href="#">Contact us</a></li>
+            <li><i class="fa fa-building"></i><a href="index.html">About</a></li>
+        </ul>
+
+        <hr>
+
+        <ul class="drawer-menu">
+            <li><a href="#">User agreement</a></li>
+            <li><a href="#">Partnership</a></li>
+            <li><a href="#">Privacy policy</a></li>
+        </ul>
+    </div>
+
+
+
+    <!-- ===== Category Scroll ===== -->
+    <div class="mobile-category-scroll mobile-only">
+        <button>All category</button>
+        <button>Gadgets</button>
+        <button>Clothes</button>
+        <button>Accessories</button>
+    </div>
+
+
+    <header class="container-fluid">
+
+        <div class="container d-flex align-items-center justify-content-between p-4">
+            <div class="logo">
+                <h2><i class="fas fa-store"></i>Brand</h2>
+            </div>
+            <div class="search-sec">
+                <input placeholder="Search" type="text" />
+                <div class="dropdown">
+                    <button class="dropdown-toggle" data-bs-toggle="dropdown" type="button">
+                        All category
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="listview.html">Smartphones</a></li>
+                        <li><a class="dropdown-item" href="listview.html">Clothes</a></li>
+                        <li><a class="dropdown-item" href="listview.html">Others</a></li>
+                    </ul>
+                </div>
+                <button class="btn1">Search</button>
+            </div>
+            <div class="icons">
+                <div class="icon-item">
+                    <i class="fa-solid fa-user"></i>
+                    <a href="#">Profile</a>
+                </div>
+                <div class="icon-item">
+                    <i class="fa-solid fa-message"></i>
+                    <a href="#">Message</a>
+                </div>
+                <div class="icon-item">
+                    <i class="fa-solid fa-heart"></i>
+                    <a href="cart.html">Orders</a>
+                </div>
+                <div class="icon-item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a href="cart.html">My Cart</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- Mobile search bar -->
+    <div class="mobile-search">
+        <input placeholder="Search" type="text">
+        </input>
+    </div>
+
+
+    <!-- Mobile category scroll -->
+    <div class="mobile-category-scroll">
+        <button>All category</button>
+        <button>Gadgets</button>
+        <button>Clothes</button>
+        <button>Accessories</button>
+    </div>
+
+
+    <section class="container-fluid" id="S-1">
+        <div class="container nav-con d-flex justify-content-between">
+            <nav class="nav">
+                <a class="nav-link" href="listview.html"><i class="fa-solid fa-bars"></i> All category</a>
+                <a class="nav-link" href="listview.html">Hot offers</a>
+                <a class="nav-link" href="listview.html">Gift boxes</a>
+                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#">Menu item</a>
+                <a class="nav-link" href="#">Help <i class="fa-solid fa-caret-down"></i></a>
+            </nav>
+            <div class="address d-flex align-items-center mb-2 gap-5">
+                <span id="lang">English, USD <i class="fa-solid fa-caret-down"></i></span>
+                <span id="Ship">Ship to <img src="assests/c-logo.png" /> <i class="fa-solid fa-caret-down"></i></span>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid" id="user">
+        <div class="container mt-3" id="User-S">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-md-2">
+                    <nav class="nav category-list">
+                        <a class="nav-link active" href="#">Automobiles</a>
+                        <a class="nav-link" href="#">Clothes and wear</a>
+                        <a class="nav-link" href="#">Home interiors</a>
+                        <a class="nav-link" href="listview.html">Computer and tech</a>
+                        <a class="nav-link" href="#">Tools, equipments</a>
+                        <a class="nav-link" href="#">Sports and outdoor</a>
+                        <a class="nav-link" href="#">Animal and pets</a>
+                        <a class="nav-link" href="#">Machinery tools</a>
+                        <a class="nav-link" href="pDetail.html">More category</a>
+                    </nav>
+                </div>
+                <!-- Center content -->
+                <div class="col-md-7">
+                    <div class="highlight-card d-flex align-items-center justify-content-between">
+                        <div>
+                            <h5>Latest trending</h5>
+                            <h3><strong>Electronic items</strong></h3>
+                            <button class="btn btn-light mt-3">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right column -->
+                <div class="col-md-3">
+                    <div class="login-card">
+                        <p><strong>Hi, user</strong><br />let's get stated</p>
+                        <button class="btn btn-primary">Join now</button>
+                        <button class="btn btn-outline-primary">Log in</button>
+                    </div>
+                    <div class="right-card orange-card">
+                        Get US $10 off<br />with a new supplier
+                    </div>
+                    <div class="right-card blue-card">
+                        Send quotes with<br />supplier preferences
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container my-1">
+            <div class="row deals-card">
+                <!-- Left section: Deals message + timer -->
+                <div class="col-md-2 deals-left d-flex flex-column justify-content-center">
+                    <h5>Deals and offers</h5>
+                    <p>Hygiene equipments</p>
+                    <div class="d-flex flex-wrap">
+                        <div class="deals-timer-box me-2 mb-2">
+                            04<small>Days</small>
+                        </div>
+                        <div class="deals-timer-box me-2 mb-2">
+                            13<small>Hour</small>
+                        </div>
+                        <div class="deals-timer-box me-2 mb-2">
+                            34<small>Min</small>
+                        </div>
+                        <div class="deals-timer-box mb-2">
+                            56<small>Sec</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Items -->
+                <div class="col-md-2 deals-item">
+                    <img alt="Smart watch" class="img-fluid deals-img" src="assests/img_1.png" />
+                    <div class="deals-name">Smart watches</div>
+                    <span class="deals-badge">-25%</span>
+                </div>
+                <div class="col-md-2 deals-item">
+                    <img alt="Laptop" class="img-fluid deals-img" src="assests/img_2.png" />
+                    <div class="deals-name">Laptops</div>
+                    <span class="deals-badge">-15%</span>
+                </div>
+                <div class="col-md-2 deals-item">
+                    <img alt="GoPro" class="img-fluid deals-img" src="assests/img_3.png" />
+                    <div class="deals-name">GoPro cameras</div>
+                    <span class="deals-badge">-40%</span>
+                </div>
+                <div class="col-md-2 deals-item">
+                    <img alt="Headphones" class="img-fluid deals-img" src="assests/img_4.png" />
+                    <div class="deals-name">Headphones</div>
+                    <span class="deals-badge">-25%</span>
+                </div>
+                <div class="col-md-2 deals-item">
+                    <img alt="Canon Camera" class="img-fluid deals-img" src="assests/img_5.png" />
+                    <div class="deals-name">Canon cameras</div>
+                    <span class="deals-badge">-25%</span>
+                </div>
+            </div>
+        </div>
+        <div class="container container-custom">
+            <div class="row g-0">
+                <div class="col-md-3">
+                    <div class="promo-box h-100">
+                        <h5>Home and<br />outdoor</h5>
+                        <button class="btn btn-light border">Source now</button>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="row row-cols-2 row-cols-md-4 g-0">
+                        <!-- Product card 1 -->
+                        <div class="col">
+                            <div class="product-card">
+                                <div>
+                                    <h6 class="mb-1">Soft chairs</h6>
+                                    <small class="text-muted">From USD 19</small>
+                                </div>
+                                <img alt="Soft chair" class="mt-2" src="assests/H-2.png" />
+                            </div>
+                        </div>
+                        <!-- Product card 2 -->
+                        <div class="col">
+                            <div class="product-card">
+                                <div>
+                                    <h6 class="mb-1">Sofa &amp; chair</h6>
+                                    <small class="text-muted">From USD 19</small>
+                                </div>
+                                <img alt="Sofa" class="mt-2" src="assests/H-3.png" />
+                            </div>
+                        </div>
+                        <!-- Product card 3 -->
+                        <div class="col">
+                            <div class="product-card">
+                                <div>
+                                    <h6 class="mb-1">Kitchen dishes</h6>
+                                    <small class="text-muted">From USD 19</small>
+                                </div>
+                                <img alt="Dishes" class="mt-2" src="assests/H-4.png" />
+                            </div>
+                        </div>
+                        <!-- Product card 4 -->
+                        <div class="col">
+                            <div class="product-card">
+                                <div>
+                                    <h6 class="mb-1">Smart watches</h6>
+                                    <small class="text-muted">From USD 19</small>
+                                </div>
+                                <img alt="Watches" class="mt-2" src="assests/H-5.png" />
+                            </div>
+                        </div>
+                        <!-- Product card 5 -->
+                        <div class="col">
+                            <div class="product-card">
+                                <div>
+                                    <h6 class="mb-1">Kitchen mixer</h6>
+                                    <small class="text-muted">From USD 100</small>
+                                </div>
+                                <img alt="Mixer" class="mt-2" src="assests/H-6.png" />
+                            </div>
+                        </div>
+                        <!-- Product card 6 -->
+                        <div class="col">
+                            <div class="product-card">
+                                <div>
+                                    <h6 class="mb-1">Blenders</h6>
+                                    <small class="text-muted">From USD 39</small>
+                                </div>
+                                <img alt="Blender" class="mt-2" src="assests/H-7.png" />
+                            </div>
+                        </div>
+                        <!-- Product card 7 -->
+                        <div class="col">
+                            <div class="product-card">
+                                <div>
+                                    <h6 class="mb-1">Home appliance</h6>
+                                    <small class="text-muted">From USD 19</small>
+                                </div>
+                                <img alt="Home appliance" class="mt-2" src="assests/H-8.jpg" />
+                            </div>
+                        </div>
+                        <!-- Product card 8 -->
+                        <div class="col">
+                            <div class="product-card">
+                                <div>
+                                    <h6 class="mb-1">Coffee maker</h6>
+                                    <small class="text-muted">From USD 10</small>
+                                </div>
+                                <img alt="Coffee maker" class="mt-2" src="assests/H-9.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container box-wrapper">
+            <div class="row g-0">
+                <!-- Left Promo Section -->
+                <div class="col-md-3">
+                    <div class="promo-card text-start">
+                        <h5>Consumer<br />electronics and<br />gadgets</h5>
+                        <button class="btn btn-light border mt-3">Source now</button>
+                    </div>
+                </div>
+                <!-- Product Grid -->
+                <div class="col-md-9">
+                    <div class="row row-cols-2 row-cols-md-4 g-0">
+                        <!-- Product item -->
+                        <div class="col">
+                            <div class="product-tile">
+                                <div>
+                                    <h6 class="mb-1">Smart watches</h6>
+                                    <small class="text-muted">From USD 19</small>
+                                </div>
+                                <img alt="Smart watches" class="mt-2" src="assests/img_1.png" />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="product-tile">
+                                <div>
+                                    <h6 class="mb-1">Cameras</h6>
+                                    <small class="text-muted">From USD 89</small>
+                                </div>
+                                <img alt="Camera" class="mt-2" src="assests/img_3.png" />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="product-tile">
+                                <div>
+                                    <h6 class="mb-1">Headphones</h6>
+                                    <small class="text-muted">From USD 10</small>
+                                </div>
+                                <img alt="Headphones" class="mt-2" src="assests/C-1.png" />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="product-tile">
+                                <div>
+                                    <h6 class="mb-1">Smart watches</h6>
+                                    <small class="text-muted">From USD 90</small>
+                                </div>
+                                <img alt="Smartwatch 2" class="mt-2" src="assests/C-2.png" />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="product-tile">
+                                <div>
+                                    <h6 class="mb-1">Gaming set</h6>
+                                    <small class="text-muted">From USD 35</small>
+                                </div>
+                                <img alt="Gaming set" class="mt-2" src="assests/img_4.png" />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="product-tile">
+                                <div>
+                                    <h6 class="mb-1">Laptops &amp; PC</h6>
+                                    <small class="text-muted">From USD 340</small>
+                                </div>
+                                <img alt="Laptop" class="mt-2" src="assests/img_2.png" />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="product-tile">
+                                <div>
+                                    <h6 class="mb-1">Smartphones</h6>
+                                    <small class="text-muted">From USD 19</small>
+                                </div>
+                                <img alt="Smartphone" class="mt-2" src="assests/C-3.png" />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="product-tile">
+                                <div>
+                                    <h6 class="mb-1">Electric kettle</h6>
+                                    <small class="text-muted">From USD 240</small>
+                                </div>
+                                <img alt="Kettle" class="mt-2" src="assests/C-4.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row custom-section align-items-center">
+                <!-- Left text -->
+                <div class="col-md-6 info-text mb-4 mb-md-0">
+                    <h2>An easy way to send<br />requests to all suppliers</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <!-- Right form card -->
+                <div class="col-md-6">
+                    <div class="quote-card">
+                        <h5>Send quote to suppliers</h5>
+                        <form>
+                            <div class="mb-3">
+                                <input class="form-control" placeholder="What item you need?" type="text" />
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" placeholder="Type more details" rows="3"></textarea>
+                            </div>
+                            <div class="row">
+                                <div class="col-7 mb-3">
+                                    <input class="form-control" placeholder="Quantity" type="number" />
+                                </div>
+                                <div class="col-5 mb-3">
+                                    <select class="form-select">
+                                        <option selected="">Pcs</option>
+                                        <option>Kg</option>
+                                        <option>Box</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary w-100" type="submit">Send inquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container recommended-section py-5 mb-0">
+            <h5 class="section-title">Recommended items</h5>
+            <div class="five-cols">
+                <!-- Item 1 -->
+                <div class="card-wrapper">
+                    <div class="product-card">
+                        <img alt="T-shirt" src="assests/R-1.png" />
+                        <div class="product-price">$10.30</div>
+                        <div class="product-desc">T-shirts with multiple colors, for men</div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="card-wrapper">
+                    <div class="product-card">
+                        <img alt="Jeans shorts" src="assests/R-2.jpg" />
+                        <div class="product-price">$10.30</div>
+                        <div class="product-desc">Jeans shorts for men<br />blue color</div>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="card-wrapper">
+                    <div class="product-card">
+                        <img alt="Winter coat" src="assests/R-3.png" />
+                        <div class="product-price">$12.50</div>
+                        <div class="product-desc">Brown winter coat<br />medium size</div>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="card-wrapper">
+                    <div class="product-card">
+                        <img alt="Travel bag" src="assests/R-4.png" />
+                        <div class="product-price">$34.00</div>
+                        <div class="product-desc">Jeans bag for travel<br />for men</div>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="card-wrapper">
+                    <div class="product-card">
+                        <img alt="Leather wallet" src="assests/R-5.png" />
+                        <div class="product-price">$99.00</div>
+                        <div class="product-desc">Leather wallet</div>
+                    </div>
+                </div>
+                <!-- Item 6 -->
+                <div class="card-wrapper">
+                    <div class="product-card">
+                        <img alt="Camera" src="assests/R-6.png" />
+                        <div class="product-price">$9.99</div>
+                        <div class="product-desc">Canon camera<br />black, 100x zoom</div>
+                    </div>
+                </div>
+                <!-- Item 7 -->
+                <div class="card-wrapper">
+                    <div class="product-card">
+                        <img alt="Headset" src="assests/C-1.png" />
+                        <div class="product-price">$8.99</div>
+                        <div class="product-desc">Headset for gaming<br />with mic</div>
+                    </div>
+                </div>
+                <!-- Item 8 -->
+                <div class="card-wrapper">
+                    <div class="product-card">
+                        <img alt="Smartwatch" src="assests/R-8.png" />
+                        <div class="product-price">$10.30</div>
+                        <div class="product-desc">Smartwatch<br />silver color modern</div>
+                    </div>
+                </div>
+                <!-- Item 9 -->
+                <div class="card-wrapper">
+                    <div class="product-card">
+                        <img alt="Clay jar" src="assests/H-5.png" />
+                        <div class="product-price">$10.30</div>
+                        <div class="product-desc">Blue wallet for men<br />leather metarial</div>
+                    </div>
+                </div>
+                <!-- Item 10 -->
+                <div class="card-wrapper">
+                    <div class="product-card">
+                        <img electric="" kettle"="" src="assests/C-2.png" />
+                        <div class="product-price">$80.95</div>
+                        <div class="product-desc">Jeans bag for travel<br />for men</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h5 class="section-title">Our extra services</h5>
+            <div class="row g-3">
+                <!-- Service 1 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="service-card h-100">
+                        <img alt="Industry Hubs" src="assests/S-1.png" />
+                        <div class="card-body">
+                            Source from<br />Industry Hubs
+                            <div class="service-icon">🔍</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="service-card h-100">
+                        <img alt="Customize products" src="assests/S-2.png" />
+                        <div class="card-body">
+                            Customize Your<br />Products
+                            <div class="service-icon">🗂️</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="service-card h-100">
+                        <img alt="Shipping" src="assests/S-3.png" />
+                        <div class="card-body">
+                            Fast, reliable shipping<br />by ocean or air
+                            <div class="service-icon">✈️</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="service-card h-100">
+                        <img alt="Monitoring" src="assests/S-4.png" />
+                        <div class="card-body">
+                            Product monitoring<br />and inspection
+                            <div class="service-icon">🛡️</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-5">
+            <h5 class="section-title">Suppliers by region</h5>
+            <div class="five-col-grid">
+                <div class="supplier-col">
+                    <div class="supplier-item">
+                        <img alt="UAE" src="https://flagcdn.com/w40/ae.png" />
+                        <div>
+                            <div class="supplier-name">Arabic Emirates</div>
+                            <div class="supplier-link">shopname.ae</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="supplier-col">
+                    <div class="supplier-item">
+                        <img alt="Australia" src="https://flagcdn.com/w40/au.png" />
+                        <div>
+                            <div class="supplier-name">Australia</div>
+                            <div class="supplier-link">shopname.ae</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="supplier-col">
+                    <div class="supplier-item">
+                        <img alt="USA" src="https://flagcdn.com/w40/us.png" />
+                        <div>
+                            <div class="supplier-name">United States</div>
+                            <div class="supplier-link">shopname.ae</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="supplier-col">
+                    <div class="supplier-item">
+                        <img alt="Russia" src="https://flagcdn.com/w40/ru.png" />
+                        <div>
+                            <div class="supplier-name">Russia</div>
+                            <div class="supplier-link">shopname.ru</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="supplier-col">
+                    <div class="supplier-item">
+                        <img alt="Italy" src="https://flagcdn.com/w40/it.png" />
+                        <div>
+                            <div class="supplier-name">Italy</div>
+                            <div class="supplier-link">shopname.it</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="supplier-col">
+                    <div class="supplier-item">
+                        <img alt="Denmark" src="https://flagcdn.com/w40/dk.png" />
+                        <div>
+                            <div class="supplier-name">Denmark</div>
+                            <div class="supplier-link">denmark.com.dk</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="supplier-col">
+                    <div class="supplier-item">
+                        <img alt="France" src="https://flagcdn.com/w40/fr.png" />
+                        <div>
+                            <div class="supplier-name">France</div>
+                            <div class="supplier-link">shopname.com.fr</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="supplier-col">
+                    <div class="supplier-item">
+                        <img alt="UAE" src="https://flagcdn.com/w40/ae.png" />
+                        <div>
+                            <div class="supplier-name">Arabic Emirates</div>
+                            <div class="supplier-link">shopname.ae</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="supplier-col">
+                    <div class="supplier-item">
+                        <img alt="China" src="https://flagcdn.com/w40/cn.png" />
+                        <div>
+                            <div class="supplier-name">China</div>
+                            <div class="supplier-link">shopname.ae</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="supplier-col">
+                    <div class="supplier-item">
+                        <img alt="UK" src="https://flagcdn.com/w40/gb.png" />
+                        <div>
+                            <div class="supplier-name">Great Britain</div>
+                            <div class="supplier-link">shopname.co.uk</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="subscribe-section">
+        <h4>Subscribe on our newsletter</h4>
+        <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+        <form class="subscribe-form d-flex">
+            <div class="input-group me-2">
+                <span class="input-group-text bg-white">
+                    <svg fill="#6c757d" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v.217L8 8.583 0 4.217V4zm0 1.383v6.634l5.803-3.456L0 5.383zm6.761 3.763l-6.51 3.876A2 2 0 0 0 2 14h12a2 2 0 0 0 1.749-1.025l-6.51-3.876L8 9.417l-1.239-.271zM16 5.383l-5.803 3.178L16 12.017V5.383z">
+                        </path>
+                    </svg>
+                </span>
+                <input class="form-control" placeholder="Email" required="" type="email" />
+            </div>
+            <button class="btn btn-subscribe" type="submit">Subscribe</button>
+        </form>
+    </section>
+    <footer>
+        <!-- Top Section -->
+        <div class="container">
+            <div class="row footer-top align-items-start g-4 pb-5">
+                <!-- 1. Brand block -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="footer-logo d-flex align-items-center">
+                        <i class="fas fa-store"></i>
+                        Brand
+                    </div>
+                    <p class="footer-desc">Best information about the company goes here but now lorem ipsum is</p>
+                    <div class="footer-social d-flex">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <!-- 2. About -->
+                <div class="col-6 col-md">
+                    <div class="footer-title">About</div>
+                    <a class="footer-link" href="index.html">About Us</a>
+                    <a class="footer-link" href="index.html">Find store</a>
+                    <a class="footer-link" href="listview.html">Categories</a>
+                    <a class="footer-link" href="#">Blogs</a>
+                </div>
+                <!-- 3. Partnership -->
+                <div class="col-6 col-md">
+                    <div class="footer-title">Partnership</div>
+                    <a class="footer-link" href="index.html">About Us</a>
+                    <a class="footer-link" href="index.html">Find store</a>
+                    <a class="footer-link" href="listview.html">Categories</a>
+                    <a class="footer-link" href="#">Blogs</a>
+                </div>
+                <!-- 4. Information -->
+                <div class="col-6 col-md">
+                    <div class="footer-title">Information</div>
+                    <a class="footer-link" href="#">Help Center</a>
+                    <a class="footer-link" href="#">Money Refund</a>
+                    <a class="footer-link" href="#">Shipping</a>
+                    <a class="footer-link" href="#">Contact us</a>
+                </div>
+                <!-- 5. For users -->
+                <div class="col-6 col-md">
+                    <div class="footer-title">For users</div>
+                    <a class="footer-link" href="#">Login</a>
+                    <a class="footer-link" href="#">Register</a>
+                    <a class="footer-link" href="#">Settings</a>
+                    <a class="footer-link" href="cart.html">My Orders</a>
+                </div>
+                <!-- 6. Get app -->
+                <div class="col-6 col-md">
+                    <div class="footer-title">Get app</div>
+                    <div class="footer-app d-flex flex-column">
+                        <!-- App Store Badge (Apple official CDN) -->
+                        <a href="#">
+                            <img alt="Download on the App Store"
+                                src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                                style="height: 36px; margin-bottom: 8px;" />
+                        </a>
+                        <!-- Google Play Badge (Google official CDN) -->
+                        <a href="#">
+                            <img alt="Get it on Google Play"
+                                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                                style="height: 32px;" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom -->
+        <div class="footer-bottom">
+            <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="text-muted">© 2023 Ecommerce.</div>
+                <div class="footer-lang d-flex align-items-center mt-2 mt-md-0">
+                    <img alt="English Flag" src="https://flagcdn.com/us.svg" />
+                    <span class="text-muted">English <i class="fas fa-chevron-up ms-1"></i></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script crossorigin="anonymous" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"></script>
+<script src="main.js"></script>
+
+</html>

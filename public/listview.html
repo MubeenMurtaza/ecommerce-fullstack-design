@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List View</title>
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="list.css">
+
+</head>
+
+<body>
+
+
+    <!-- Mobile Header -->
+    <div class="mobile-only mobile-header-list">
+        <div class="mobile-header-top">
+            <button class="back-btn" onclick="history.back()">
+                <i class="bi bi-arrow-left"></i>
+            </button>
+            <h2 class="mobile-title">Mobile accessory</h2>
+            <div class="header-icons">
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#"><i class="bi bi-person"></i></a>
+            </div>
+        </div>
+
+        <!-- Search -->
+        <div class="mobile-search-bar">
+            <input type="text" placeholder="Search" />
+            <i class="bi bi-search"></i>
+        </div>
+
+        <!-- Categories scroll -->
+        <div class="mobile-category-scroll">
+            <button>Tablets</button>
+            <button>Phones</button>
+            <button>Ipads</button>
+            <button>Ipod</button>
+            <button>Jackets</button>
+        </div>
+    </div>
+
+
+    <header class="container-fluid">
+        <div class="container d-flex align-items-center justify-content-between p-4">
+            <div class="logo">
+                <h2><i class="fas fa-store"></i>Brand</h2>
+            </div>
+            <div class="search-sec">
+                <input type="text" placeholder="Search">
+
+                <div class="dropdown">
+                    <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        All category
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Smartphones</a></li>
+                        <li><a class="dropdown-item" href="#">Clothes</a></li>
+                        <li><a class="dropdown-item" href="#">Others</a></li>
+                    </ul>
+                </div>
+
+                <button class="btn1">Search</button>
+            </div>
+            <div class="icons">
+                <div class="icon-item">
+                    <i class="fa-solid fa-user"></i>
+                    <a href="#">Profile</a>
+                </div>
+                <div class="icon-item">
+                    <i class="fa-solid fa-message"></i>
+                    <a href="#">Message</a>
+                </div>
+                <div class="icon-item">
+                    <i class="fa-solid fa-heart"></i>
+                    <a href="cart.html">Orders</a>
+                </div>
+                <div class="icon-item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a href="cart.html">My Cart</a>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+     <section class="container-fluid" id="S-1">
+        <div class="container nav-con d-flex justify-content-between">
+            <nav class="nav">
+                <a class="nav-link" href="listview.html"><i class="fa-solid fa-bars"></i> All category</a>
+                <a class="nav-link" href="listview.html">Hot offers</a>
+                <a class="nav-link" href="listview.html">Gift boxes</a>
+                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#">Menu item</a>
+                <a class="nav-link" href="#">Help <i class="fa-solid fa-caret-down"></i></a>
+            </nav>
+            <div class="address d-flex align-items-center mb-2 gap-5">
+                <span id="lang">English, USD <i class="fa-solid fa-caret-down"></i></span>
+                <span id="Ship">Ship to <img src="assests/c-logo.png" /> <i class="fa-solid fa-caret-down"></i></span>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container-fluid p-4 content">
+        <div class="container ">
+
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Clothings</a></li>
+                    <li class="breadcrumb-item"><a href="#">Men’s wear</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Summer clothing</li>
+                </ol>
+            </nav>
+
+        </div>
+
+    </section>
+
+
+    <section class="container-fluid content">
+        <div class="container">
+            <div class="row">
+                <div class="sidebar col-3">
+                    <!-- CATEGORY -->
+                    <div class="filter-section">
+                        <h6>Category <i class="fas fa-chevron-up"></i></h6>
+                        <div>Mobile accessory</div>
+                        <div>Electronics</div>
+                        <div>Smartphones</div>
+                        <div>Modern tech</div>
+                        <a href="#" class="see-all">See all</a>
+                    </div>
+
+                    <!-- BRANDS -->
+                    <div class="filter-section">
+                        <h6>Brands <i class="fas fa-chevron-up"></i></h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="brand1">
+                            <label class="form-check-label" for="brand1">Samsung</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="brand2">
+                            <label class="form-check-label" for="brand2">Apple</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="brand3">
+                            <label class="form-check-label" for="brand3">Huawei</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="brand4">
+                            <label class="form-check-label" for="brand4">Pocco</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="brand5">
+                            <label class="form-check-label" for="brand5">Lenovo</label>
+                        </div>
+                        <a href="#" class="see-all">See all</a>
+                    </div>
+
+                    <!-- FEATURES -->
+                    <div class="filter-section">
+                        <h6>Features <i class="fas fa-chevron-up"></i></h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="feat1">
+                            <label class="form-check-label" for="feat1">Metallic</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="feat2">
+                            <label class="form-check-label" for="feat2">Plastic cover</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="feat3">
+                            <label class="form-check-label" for="feat3">8GB Ram</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="feat4">
+                            <label class="form-check-label" for="feat4">Super power</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="feat5">
+                            <label class="form-check-label" for="feat5">Large Memory</label>
+                        </div>
+                        <a href="#" class="see-all">See all</a>
+                    </div>
+
+                    <!-- PRICE RANGE -->
+                    <div class="filter-section">
+                        <h6>Price range <i class="fas fa-chevron-up"></i></h6>
+                        <input type="range" class="form-range" min="0" max="1000" step="1">
+                        <div class="row mt-2">
+                            <div class="col-6">
+                                <label class="form-label">Min</label>
+                                <input type="number" class="form-control form-control-sm" placeholder="0">
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label">Max</label>
+                                <input type="number" class="form-control form-control-sm" placeholder="999999">
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-primary btn-sm w-100 mt-2 btn-apply">Apply</button>
+                    </div>
+
+                    <!-- CONDITION -->
+                    <div class="filter-section">
+                        <h6>Condition <i class="fas fa-chevron-up"></i></h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="condition" id="cond1" checked>
+                            <label class="form-check-label" for="cond1">Any</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="condition" id="cond2">
+                            <label class="form-check-label" for="cond2">Refurbished</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="condition" id="cond3">
+                            <label class="form-check-label" for="cond3">Brand new</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="condition" id="cond4">
+                            <label class="form-check-label" for="cond4">Old items</label>
+                        </div>
+                    </div>
+
+                    <!-- RATINGS -->
+                    <div class="filter-section">
+                        <h6>Ratings <i class="fas fa-chevron-up"></i></h6>
+                        <div class="form-check d-flex align-items-center mb-2">
+                            <input class="form-check-input me-2" type="checkbox" id="r1">
+                            <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <div class="form-check d-flex align-items-center mb-2">
+                            <input class="form-check-input me-2" type="checkbox" id="r2">
+                            <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                        </div>
+                        <div class="form-check d-flex align-items-center mb-2">
+                            <input class="form-check-input me-2" type="checkbox" id="r3">
+                            <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                        </div>
+                        <div class="form-check d-flex align-items-center mb-2">
+                            <input class="form-check-input me-2" type="checkbox" id="r4">
+                            <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-9 my-4">
+
+                    <!-- Header filter bar -->
+                    <div class="d-flex align-items-center justify-content-between flex-wrap mb-4 girdS">
+                        <div class="mb-2">
+                            <strong>12,911 items in</strong> <span class="text-primary">Mobile accessory</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="form-check mb-0">
+                                <input class="form-check-input" type="checkbox" id="verified">
+                                <label class="form-check-label" for="verified">Verified only</label>
+                            </div>
+                            <select class="form-select">
+                                <option selected>Featured</option>
+                                <option>Lowest Price</option>
+                                <option>Highest Rating</option>
+                            </select>
+                            <div class="btn-group" role="group" aria-label="View">
+                                <button id="btnGrid" type="button" class="btn btn-outline-secondary" title="Grid view"
+                                    onclick="toGridView()"> <i class="bi bi-grid-3x3-gap"></i> </button>
+                                <button id="btnList" type="button" class="btn btn-outline-primary active"
+                                    title="List view" onclick="toListView()"> <i class="bi bi-list"></i> </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product list -->
+                    <div id="products" class="row">
+                        <!-- Product Item Example -->
+                        <!-- Repeat this block -->
+                        <div class="col-12">
+                            <div class="product-card d-flex align-items-start">
+                                <img src="assests/C-4.png" class="product-img me-3" alt="product image">
+                                <div class="flex-grow-1">
+                                    <h6>Canon Camera EOS 2000, Black 10x zoom</h6>
+                                    <div class="d-flex align-items-center mb-1">
+                                        <h5 class="mb-0 text-danger">$998.00</h5>
+                                        <span class="old-price">$1128.00</span>
+                                    </div>
+                                    <div class="mb-1">
+                                        <span class="rating-star">★★★★★</span>
+                                        <small class="text-muted ms-1">7.5</small>
+                                        <small class="text-muted">• 154 orders</small>
+                                        <span class="free-shipping ms-2">• Free Shipping</span>
+                                    </div>
+                                    <p class="mb-1 small text-muted">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore...
+                                    </p>
+                                    <a href="pDetail.html" class="text-primary small">View details</a>
+                                </div>
+                                <div>
+                                    <i class="bi bi-heart heart-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Repeat ends -->
+                        <div class="col-12">
+                            <div class="product-card d-flex align-items-start">
+                                <img src="assests/img_5.png" class="product-img me-3" alt="product image">
+                                <div class="flex-grow-1">
+                                    <h6>Canon Camera EOS 2000, Black 10x zoom</h6>
+                                    <div class="d-flex align-items-center mb-1">
+                                        <h5 class="mb-0 text-danger">$998.00</h5>
+                                        <span class="old-price">$1128.00</span>
+                                    </div>
+                                    <div class="mb-1">
+                                        <span class="rating-star">★★★★★</span>
+                                        <small class="text-muted ms-1">7.5</small>
+                                        <small class="text-muted">• 154 orders</small>
+                                        <span class="free-shipping ms-2">• Free Shipping</span>
+                                    </div>
+                                    <p class="mb-1 small text-muted">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore...
+                                    </p>
+                                    <a href="pDetail.html" class="text-primary small">View details</a>
+                                </div>
+                                <div>
+                                    <i class="bi bi-heart heart-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="product-card d-flex align-items-start">
+                                <img src="assests/C-3.png" class="product-img me-3" alt="product image">
+                                <div class="flex-grow-1">
+                                    <h6>Canon Camera EOS 2000, Black 10x zoom</h6>
+                                    <div class="d-flex align-items-center mb-1">
+                                        <h5 class="mb-0 text-danger">$998.00</h5>
+                                        <span class="old-price">$1128.00</span>
+                                    </div>
+                                    <div class="mb-1">
+                                        <span class="rating-star">★★★★★</span>
+                                        <small class="text-muted ms-1">7.5</small>
+                                        <small class="text-muted">• 154 orders</small>
+                                        <span class="free-shipping ms-2">• Free Shipping</span>
+                                    </div>
+                                    <p class="mb-1 small text-muted">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore...
+                                    </p>
+                                    <a href="pDetail.html" class="text-primary small">View details</a>
+                                </div>
+                                <div>
+                                    <i class="bi bi-heart heart-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="product-card d-flex align-items-start">
+                                <img src="assests/img_2.png" class="product-img me-3" alt="product image">
+                                <div class="flex-grow-1">
+                                    <h6>Canon Camera EOS 2000, Black 10x zoom</h6>
+                                    <div class="d-flex align-items-center mb-1">
+                                        <h5 class="mb-0 text-danger">$998.00</h5>
+                                        <span class="old-price">$1128.00</span>
+                                    </div>
+                                    <div class="mb-1">
+                                        <span class="rating-star">★★★★★</span>
+                                        <small class="text-muted ms-1">7.5</small>
+                                        <small class="text-muted">• 154 orders</small>
+                                        <span class="free-shipping ms-2">• Free Shipping</span>
+                                    </div>
+                                    <p class="mb-1 small text-muted">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore...
+                                    </p>
+                                    <a href="pDetail.html" class="text-primary small">View details</a>
+                                </div>
+                                <div>
+                                    <i class="bi bi-heart heart-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="product-card d-flex align-items-start">
+                                <img src="assests/img_1.png" class="product-img me-3" alt="product image">
+                                <div class="flex-grow-1">
+                                    <h6>Canon Camera EOS 2000, Black 10x zoom</h6>
+                                    <div class="d-flex align-items-center mb-1">
+                                        <h5 class="mb-0 text-danger">$998.00</h5>
+                                        <span class="old-price">$1128.00</span>
+                                    </div>
+                                    <div class="mb-1">
+                                        <span class="rating-star">★★★★★</span>
+                                        <small class="text-muted ms-1">7.5</small>
+                                        <small class="text-muted">• 154 orders</small>
+                                        <span class="free-shipping ms-2">• Free Shipping</span>
+                                    </div>
+                                    <p class="mb-1 small text-muted">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore...
+                                    </p>
+                                    <a href="pDetail.html" class="text-primary small">View details</a>
+                                </div>
+                                <div>
+                                    <i class="bi bi-heart heart-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="product-card d-flex align-items-start">
+                                <img src="assests/C-1.png" class="product-img me-3" alt="product image">
+                                <div class="flex-grow-1">
+                                    <h6>Canon Camera EOS 2000, Black 10x zoom</h6>
+                                    <div class="d-flex align-items-center mb-1">
+                                        <h5 class="mb-0 text-danger">$998.00</h5>
+                                        <span class="old-price">$1128.00</span>
+                                    </div>
+                                    <div class="mb-1">
+                                        <span class="rating-star">★★★★★</span>
+                                        <small class="text-muted ms-1">7.5</small>
+                                        <small class="text-muted">• 154 orders</small>
+                                        <span class="free-shipping ms-2">• Free Shipping</span>
+                                    </div>
+                                    <p class="mb-1 small text-muted">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore...
+                                    </p>
+                                    <a href="pDetail.html" class="text-primary small">View details</a>
+                                </div>
+                                <div>
+                                    <i class="bi bi-heart heart-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="d-flex page-bar mt-4">
+                        <div class="d-flex align-items-center gap-2">
+                            <label for="showCount">Show</label>
+                            <select class="form-select" id="showCount" style="width: 80px;">
+                                <option>10</option>
+                                <option>20</option>
+                                <option>50</option>
+                            </select>
+                        </div>
+                        <nav>
+                            <ul class="pagination mb-0">
+                                <li class="page-item disabled"><a class="page-link" href="#">‹</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">›</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="subscribe-section">
+        <h4>Subscribe on our newsletter</h4>
+        <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+
+        <form class="subscribe-form d-flex">
+            <div class="input-group me-2">
+                <span class="input-group-text bg-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#6c757d" viewBox="0 0 16 16">
+                        <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v.217L8 8.583 0 4.217V4zm0 1.383v6.634l5.803-3.456L0 5.383zm6.761 3.763l-6.51 3.876A2 2 0 0 0 2 14h12a2 2 0 0 0 1.749-1.025l-6.51-3.876L8 9.417l-1.239-.271zM16 5.383l-5.803 3.178L16 12.017V5.383z" />
+                    </svg>
+                </span>
+                <input type="email" class="form-control" placeholder="Email" required>
+            </div>
+            <button type="submit" class="btn btn-subscribe">Subscribe</button>
+        </form>
+    </section>
+
+
+    <footer>
+        <!-- Top Section -->
+        <div class="container">
+            <div class="row footer-top align-items-start g-4 pb-5">
+                <!-- 1. Brand block -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="footer-logo d-flex align-items-center">
+                        <i class="fas fa-store"></i>
+                        Brand
+                    </div>
+                    <p class="footer-desc">Best information about the company goes here but now lorem ipsum is</p>
+                    <div class="footer-social d-flex">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- 2. About -->
+                <div class="col-6 col-md">
+                    <div class="footer-title">About</div>
+                    <a class="footer-link" href="index.html">About Us</a>
+                    <a class="footer-link" href="index.html">Find store</a>
+                    <a class="footer-link" href="listview.html">Categories</a>
+                    <a class="footer-link" href="#">Blogs</a>
+                </div>
+
+                <!-- 3. Partnership -->
+                <div class="col-6 col-md">
+                    <div class="footer-title">Partnership</div>
+                    <a class="footer-link" href="index.html">About Us</a>
+                    <a class="footer-link" href="index.html">Find store</a>
+                    <a class="footer-link" href="listview.html">Categories</a>
+                    <a class="footer-link" href="#">Blogs</a>
+                </div>
+
+                <!-- 4. Information -->
+                <div class="col-6 col-md">
+                    <div class="footer-title">Information</div>
+                    <a class="footer-link" href="#">Help Center</a>
+                    <a class="footer-link" href="#">Money Refund</a>
+                    <a class="footer-link" href="#">Shipping</a>
+                    <a class="footer-link" href="#">Contact us</a>
+                </div>
+
+                <!-- 5. For users -->
+                <div class="col-6 col-md">
+                    <div class="footer-title">For users</div>
+                    <a class="footer-link" href="#">Login</a>
+                    <a class="footer-link" href="#">Register</a>
+                    <a class="footer-link" href="#">Settings</a>
+                    <a class="footer-link" href="cart.html">My Orders</a>
+                </div>
+
+                <!-- 6. Get app -->
+                <div class="col-6 col-md">
+                    <div class="footer-title">Get app</div>
+                    <div class="footer-app d-flex flex-column">
+                        <!-- App Store Badge (Apple official CDN) -->
+                        <a href="#">
+                            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                                alt="Download on the App Store" style="height: 36px; margin-bottom: 8px;">
+                        </a>
+
+                        <!-- Google Play Badge (Google official CDN) -->
+                        <a href="#">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                                alt="Get it on Google Play" style="height: 32px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="footer-bottom">
+            <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="text-muted">© 2023 Ecommerce.</div>
+                <div class="footer-lang d-flex align-items-center mt-2 mt-md-0">
+                    <img src="https://flagcdn.com/us.svg" alt="English Flag">
+                    <span class="text-muted">English <i class="fas fa-chevron-up ms-1"></i></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+    crossorigin="anonymous"></script>
+
+<script src="list.js"></script>
+<script src="main.js"></script>
+
+</html>
