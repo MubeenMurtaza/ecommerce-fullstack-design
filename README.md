@@ -1,5 +1,7 @@
 E-commerce backend (local JSON storage)
 
+All main files attached and Zip folder of whole project is also attached (including nodemodules)
+
 How to run:
 1. unzip and cd into the folder
 2. npm install
